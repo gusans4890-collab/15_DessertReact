@@ -1,6 +1,7 @@
-﻿import { memberData, menuData } from "../data/headerData";
+﻿import link from "../utils/link";
+import { memberData, menuData } from "../data/headerData";
 
-const Header = () => {
+const Header = ({ title }) => {
     return (
         <header id="header">
             <div className="header_inner">
@@ -13,7 +14,9 @@ const Header = () => {
                     <ul>
                         {menuData.map((menu) => (
                             <li key={menu.title}>
-                                <a href={menu.link}>{menu.title}</a>
+                                <a href={menu.link} onClick={link}>
+                                    {menu.title}
+                                </a>
                             </li>
                         ))}
                     </ul>
@@ -31,4 +34,3 @@ const Header = () => {
 };
 
 export default Header;
-

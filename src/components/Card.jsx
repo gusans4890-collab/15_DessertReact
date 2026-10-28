@@ -1,16 +1,16 @@
 ﻿import { card } from "../data/card";
 
-const Card = () => {
+const Card = ({ title }) => {
     return (
         <section id="cardType" className="section">
-            <h2>카페, 그 이상의 문화를 만들다</h2>
+            <h2>{title}</h2>
             <p>
                 투썸플레이스는 프리미엄 커피 & 디저트 카페의 리딩 브랜드로서 <br />
                 디저트 카페 문화의 차별화된 제품과 서비스를 선보일 것입니다.
             </p>
             <div className="container card_inner">
-                {card.map((item) => (
-                    <div className="card" key={item.id}>
+                {card.map((item, idx) => (
+                    <div className="card" key={item.id} data-aos="fade-up" data-aos-delay={idx * 150}>
                         <figure>
                             <img src={item.img} alt={item.tit} />
                         </figure>
@@ -41,3 +41,4 @@ const Card = () => {
 };
 
 export default Card;
+

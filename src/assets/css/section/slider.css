@@ -1,46 +1,45 @@
-#sliderType .container {
+﻿#sliderType .container {
     width: 1160px;
     margin: 0 auto;
     position: relative;
 }
 
-.slider_wrap {
+#sliderType .slider_wrap {
     width: 100%;
     height: 580px;
     position: relative;
     overflow: hidden;
 }
 
-.slider_wrap .swiper-wrapper {
+#sliderType .slider_wrap .swiper-wrapper {
     display: flex;
     height: 100%;
 }
 
-.swiper-slide {
+#sliderType .swiper-slide {
     position: relative;
     color: #fff;
-    flex: 0 0 100%;
     height: 100%;
     min-width: 0;
 }
 
-.swiper-slide img {
+#sliderType .swiper-slide img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-.swiper-slide {
+#sliderType .swiper-slide {
     display: flex;
     align-items: center;
 }
 
-.slider_inner {
+#sliderType .slider_inner {
     position: relative;
 }
 
-.slider_inner span {
+#sliderType .slider_inner span {
     font-size: 16px;
     margin-left: 10px;
     border: 1px solid #000000;
@@ -52,24 +51,24 @@
     transform: translateY(20px);
 }
 
-.slider_inner h1 {
+#sliderType .slider_inner h1 {
     font-size: 96px;
     font-weight: 450;
     margin: 20px 0;
 }
 
-.slider_inner p {
+#sliderType .slider_inner p {
     font-size: 32px;
     font-weight: 100;
     margin-bottom: 20px;
 }
 
-.slider_button {
+#sliderType .slider_button {
     display: flex;
     gap: 20px;
     margin-top: 25px;
 }
-.slider_button a {
+#sliderType .slider_button a {
     border-radius: 10px;
     background-color: #fff8ee;
     padding: 5px 20px;
@@ -78,19 +77,20 @@
     font-family: inherit;
     transition: all 0.3s;
 }
-.slider_button a:hover {
+#sliderType .slider_button a:hover {
     background-color: #3f3f3f;
     color: #e9e8e8;
 }
-.swiper-button-prev,
-.swiper-button-next {
+#sliderType .swiper-button-prev,
+#sliderType .swiper-button-next {
     color: #ffffffa2;
 }
 
-.swiper-pagination-bullet {
+#sliderType .swiper-pagination-bullet {
     background-color: #ffffff;
 }
 
-.swiper-pagination-bullet-active {
+#sliderType .swiper-pagination-bullet-active {
     background-color: #fffffff6;
 }
+

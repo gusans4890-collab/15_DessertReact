@@ -1,10 +1,9 @@
-﻿import React from "react";
-import { footerData } from "../data/footerData";
+﻿import { footerData } from "../data/footerData";
 
-const Footer = () => {
+const Footer = ({ title }) => {
     return (
         <section id="footer" className="section">
-            <h2 className="blind">푸터영역</h2>
+            <h2 className="blind">{title}</h2>
 
             <div className="footer_inner">
                 {footerData.map((footer, idx) => (
@@ -33,3 +32,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
