@@ -1,10 +1,22 @@
-/* header */
+﻿/* header */
 #header {
     width: 100%;
     background-color: #fff;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(183, 121, 85, 0.5);
+    position: relative;
+    z-index: 2;
 }
 
+#header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background: linear-gradient(to top, rgba(183, 121, 85, 0.28), rgba(183, 121, 85, 0.1) 40%, transparent);
+    pointer-events: none;
+}
 .header_inner {
     height: 80px;
     padding: 0 30px;
@@ -19,7 +31,13 @@
     text-transform: uppercase;
 }
 
+.header_logo a {
+    color: #6b3e2e;
+    text-shadow: 2px 3px 5px rgba(107, 62, 46, 0.25);
+}
+
 .header_logo em {
+    color: #81553b;
     font-size: 20px;
     font-weight: normal;
 }
@@ -58,3 +76,7 @@
     background-color: #000;
     color: #fff;
 }
+
+
+
+
