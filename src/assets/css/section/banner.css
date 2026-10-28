@@ -1,0 +1,55 @@
+/* 공통 레이아웃 */
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.main_banner {
+    width: 100%;
+    height: 485px;
+
+    background-image: url("../../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_text {
+    text-align: center;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.banner_text h1 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.main_banner .banner_text p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffffdc;
+}

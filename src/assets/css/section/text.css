@@ -1,0 +1,122 @@
+.section {
+    padding: 120px 0;
+}
+
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.section > span {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.text_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 20px;
+}
+
+.txt {
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.text_title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    position: relative;
+    padding-top: 75px;
+}
+
+.text_desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.txt:hover {
+    background-color: #cfceceb9;
+}
+.text_btn {
+    font-size: 14px;
+    color: #888;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.text_title::before {
+    content: "";
+    width: 49px;
+    height: 49px;
+    background: url(../../img/icon.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.t1 .text_title::before {
+    background-position: 0 0;
+}
+.t1:hover .text_title::before {
+    background-position: 0 -49px;
+}
+.t2 .text_title::before {
+    background-position: -49px 0;
+}
+.t2:hover .text_title::before {
+    background-position: -49px -49px;
+}
+.t3 .text_title::before {
+    background-position: -98px 0;
+}
+.t3:hover .text_title::before {
+    background-position: -98px -49px;
+}
+.t4 .text_title::before {
+    background-position: -147px 0;
+}
+.t4:hover .text_title::before {
+    background-position: -147px -49px;
+}
+
+.t5 .text_title::before {
+    background-position: -196px 0;
+}
+.t5:hover .text_title::before {
+    background-position: -196px -49px;
+}
+.t6 .text_title::before {
+    background-position: -245px 0;
+}
+.t6:hover .text_title::before {
+    background-position: -245px -49px;
+}
